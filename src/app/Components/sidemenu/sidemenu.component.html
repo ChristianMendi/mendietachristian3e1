@@ -1,0 +1,23 @@
+
+<button (click)="setVisibilityMenu()" id="frontButton" class="btn-95">Menu</button>
+
+<div class="sidemenu-container" [style.backgroundColor]=background
+     [style.width]= "widthMenu + 'px'"
+     [style.display]= "visibleMenu ? 'flex' : 'none'"   >
+    <div class="item ">
+        <img src="https://media.istockphoto.com/id/1495088043/vector/user-profile-icon-avatar-or-person-icon-profile-picture-portrait-symbol-default-portrait.jpg?s=612x612&w=0&k=20&c=dhV2p1JwmloBTOaGAtaA3AW1KSnjsdMt7-U_3EZElZ0=" alt="Perfil.png" class="imag">
+        <p>{{username}}</p>
+        <button (click)="setVisibilityMenu()" class="btn-95">Menu</button>
+    </div>
+    <div class="item ">
+      
+        <p>📅<span>Dashboard</span></p>
+    </div>
+    <div class="item ">
+        <p>🪪<span>Profile</span></p>
+    </div>
+    <div class="item ">
+        <button class="btn-75" (click)="setBackgroundMenu('#a13c3c')">Change color</button>
+        <button class="btn-75" (click)="setSizeMenu()">Change size</button>
+    </div>
+</div>
