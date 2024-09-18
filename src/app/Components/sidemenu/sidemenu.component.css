@@ -22,6 +22,9 @@
     gap: 10px;/**/
 }
 
+p:hover{
+    color: gray;
+}
 
 .item p {
     font-size: 20px;
@@ -39,6 +42,7 @@
     border-radius: 50%;
     object-fit: cover;
     margin-right: 1rem;
+    
 }
 
 

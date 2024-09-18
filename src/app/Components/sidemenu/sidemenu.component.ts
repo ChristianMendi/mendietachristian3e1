@@ -10,15 +10,15 @@ import { Component } from '@angular/core';
 export class SidemenuComponent {
    username:String ="Christian Mendieta";//Usuario
    background:String="";//Color de fondo
-   widthMenu:number = 375;//Tamaño
+   widthMenu:number = 385;//Tamaño
    visibleMenu:boolean = true;
 
    setVisibilityMenu():boolean{//Meétodo del menu
     this.visibleMenu = !this.visibleMenu;//Cambia el booleano
     if (!this.visibleMenu){
-      this.widthMenu = 375;
+      this.widthMenu = 385;
     } else{
-      this.widthMenu = 375;
+      this.widthMenu = 385;
     }
     return this.visibleMenu;
    }
@@ -30,7 +30,7 @@ export class SidemenuComponent {
    setSizeMenu(){
      this.widthMenu += 10;
      if (this.widthMenu>450){
-      this.widthMenu = 375;
+      this.widthMenu = 385;
      }
    }
 }
